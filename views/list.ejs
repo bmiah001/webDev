@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Welcome to <%=shopName%></h1>
+    <h2>Here are the books that we sell:</h2>
+    <ul>
+    <% for (let book of availableBooks) { %>
+      <li><%= book.name %>, £<%= book.price %></li>
+    <% } %>
+  </ul>
+  
+
+  </body>
+</html>
